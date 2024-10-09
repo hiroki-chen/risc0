@@ -17,6 +17,7 @@
 #include <cstring>
 #include <cuda_runtime.h>
 #include <stdexcept>
+#include <cstdint>
 
 template <typename... Types> inline std::string fmt(const char* fmt, Types... args) {
   size_t len = std::snprintf(nullptr, 0, fmt, args...);
